@@ -8,10 +8,10 @@ Check for Bean usage in AppConfig.java
 You could choose either a setter injection or a constructor injection. 
 
 A setter injection is just a method call.
----Calling the setter in the bean (defining that bean with the @Bean annotation) and pairing it with your getter.
+---Calling the setter in the bean (defining that bean with the @Bean annotation) and pairing it with your getter/bean.
 
 A constructor injection is also just a method call.
----Calling the constructor in the bean (defining that bean with the @Bean annotation) and pairing it with your getter.
+---Calling the constructor in the bean (defining that bean with the @Bean annotation) and pairing it with your getter/bean.
 
 Autowired using the @Autowired annotation (Examples here: https://www.baeldung.com/spring-autowire)
 ---To autowire, use the @ComponentScan({"com.location.here"}) ---refer to AppConfig.java
