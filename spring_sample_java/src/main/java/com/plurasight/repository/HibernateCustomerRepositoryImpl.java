@@ -8,15 +8,15 @@ import org.springframework.stereotype.Repository;
 
 import com.plurasight.model.Customer;
 
-@Repository("customerRepository")
+@Repository("customerRepository") //this is bean named "customerRepository"
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 	
-	@Value("${dbUsername}")
+	@Value("${dbUsername}") //inject the value here
 	private String dbUsername;
 	
 	@Override
 	public List<Customer> findAll(){
-		System.out.println(dbUsername);
+		System.out.println("dbUsername is "+ dbUsername + "from 'app.properties'");
 		
 		List<Customer> customers = new ArrayList<>();
 		

@@ -8,7 +8,7 @@ public class Application {
 		
 		ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		
-		//CustomerService service = new CustomerServiceImpl();
+		//CustomerService service = new CustomerServiceImpl(); //there is no need for this anymore since an instance of the bean is already created thanks to Spring
 		
 		CustomerService service = appContext.getBean("customerService",CustomerService.class);
 		

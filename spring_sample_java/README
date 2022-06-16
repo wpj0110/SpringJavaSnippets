@@ -1,0 +1,35 @@
+No "applicationContext.xml" usage here. All Java only.
+
+@Configuration replaces any xml files
+@Bean for Spring Beans, and are at method level
+
+Check for Bean usage in AppConfig.java
+
+You could choose either a setter injection or a constructor injection. 
+
+A setter injection is just a method call.
+---Calling the setter in the bean (defining that bean with the @Bean annotation) and pairing it with your getter.
+
+A constructor injection is also just a method call.
+---Calling the constructor in the bean (defining that bean with the @Bean annotation) and pairing it with your getter.
+
+Autowired using the @Autowired annotation (Examples here: https://www.baeldung.com/spring-autowire)
+---To autowire, use the @ComponentScan({"com.location.here"}) ---refer to AppConfig.java
+---You can autowire a bean to another bean 
+
+
+-------If you run this program, this is the process:
+---------Currently, @ComponentScan looks for beans in com.plurasight (because of @ComponentScan), 
+---------finds the customerService bean
+---------autowires to the constructor injection
+---------finds the customerRepository bean
+
+@Scope example in CustomerServiceImpl.java
+---singleton vs. prototype
+
+@PropertySource("fileName.properties") in AppConfig.java
+---To make the properties available in the container, you need the following code:
+	@Bean
+	public static PropertySourcesPlaceholderConfigurer getPropertySourcesPlaceholderConfigurer() {
+		return new PropertySourcesPlaceholderConfigurer();
+	}

@@ -15,19 +15,25 @@ public class AppConfig {
 	public static PropertySourcesPlaceholderConfigurer getPropertySourcesPlaceholderConfigurer() {
 		return new PropertySourcesPlaceholderConfigurer();
 	}
-	
-//	@Bean(name = "customerService")
-//	public CustomerService getCustomerService() {
-//		//CustomerServiceImpl service = new CustomerServiceImpl(getCustomerRepository());
-//		CustomerServiceImpl service = new CustomerServiceImpl();
-//		//service.setCustomerRepository(getCustomerRepository());
-//		return service;
+
+///////////////////////////////The two methods below COULD BE paired together////////////////////////
+//	@Bean(name = "customerService") //this is a bean
+//	public CustomerService getCustomerService() { //Choose either a setter injection or a constructor injection
+//		//CustomerServiceImpl service = new CustomerServiceImpl(getCustomerRepository()); //constructor injection here
+//	
+//		//CustomerServiceImpl service = new CustomerServiceImpl(); //setter injection here.
+//		//service.setCustomerRepository(getCustomerRepository()); //setter injection here.
+//	
+//	    //The line of code below relies on autowiring. Choose either setter or constructor injection. 
+//	    //CustomerServiceImpl service = new CustomerServiceImpl(); //if you've used @Autowired, it may have been either a setter or a constructor! Refer to CustomerServiceImpl.java
+//		
+//	    //return service;
 //	}
-	
+//	
 //	@Bean(name = "customerRepository")
 //	public CustomerRepository getCustomerRepository() {
 //		return new HibernateCustomerRepositoryImpl();
 //	}
-	
+//////////////////////////////////////////////////////////////////////////////////////////////////
 	
 }
