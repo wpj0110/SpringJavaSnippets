@@ -1,5 +1,15 @@
-INDEX VERSION 1.131+C:\Users\willi\MyCodeProjects\Spring Tools 4\SpringJavaSnippets\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.131+C:\Users\William\Documents\GitHub\SpringJavaSnippets\.metadata\.plugins\org.eclipse.jdt.core
+409583432.index
+2154051283.index
+3435648363.index
+3212859965.index
+2462082427.index
+4068155069.index
+3138574111.index
+3325842272.index
+474073325.index
+4159603737.index
+895761487.index
+3883065823.index
+2747583089.index
 1865797976.index
-1807525297.index
-2648308516.index
-1473533565.index
