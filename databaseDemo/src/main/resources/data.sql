@@ -1,3 +1,4 @@
+/* //Only needed for JDBC. This is already initialized the Hibernate triggered by Spring Boot auto configuration
 CREATE TABLE person
 (
    id integer not null,
@@ -6,6 +7,7 @@ CREATE TABLE person
    birth_date timestamp,
    primary key(id)
 );
+*/
  
 INSERT INTO PERSON (ID, NAME, LOCATION, BIRTH_DATE ) 
 VALUES(10001,  'Ranga', 'Hyderabad',CURRENT_TIMESTAMP());
